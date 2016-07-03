@@ -1,7 +1,7 @@
 # GNB
 
 ## __GNB is Not Bootstrap__
-###### Not to be confused with Goliath National Bank from HIMYM   
+###### Not to be confused with 'Goliath National Bank' from HIMYM ;-)   
 
 A small CSS library that has the bare minimum layout stuff.  
 

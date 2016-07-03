@@ -1,0 +1,62 @@
+.tabbed-list
+{
+    ul {
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+    }
+    li {
+        text-align: left;
+        padding: 10px;
+    }
+    li:first-child {
+        text-align: center;
+    }
+}
+
+.bullet-list
+{
+    ul {
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+    }
+    li {
+        list-style:  disc;
+        list-style-position: inside;
+        padding: 10px;
+    }
+    li:first-child {
+        text-align: center;
+        list-style: none;
+
+    }
+}
+
+.dash-bullet-list
+{
+    ul {
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+    }
+    li {
+        list-style: none;;
+        list-style-position: inside;
+        padding: 10px;
+        &:before {
+            text-indent: -5px;
+            content: "-";
+        }
+    }
+
+    li:first-child {
+        text-align: center;
+        list-style: none;
+        &:before {
+            text-indent: -5px;
+            content: "";
+        }
+    }
+}

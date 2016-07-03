@@ -2,6 +2,11 @@
 @import "common.less";
 
 @media screen and (max-width: @xs-media-max-width) {
+    .nav-item-container
+    {
+        padding: (@element-padding + @nav-padding)*0.8;
+    }
+
     .nav-menu-button{
         border: 0;
         background-color: transparent;
@@ -44,11 +49,11 @@
             z-index: 1000;
 
             li{
+                padding: (@element-padding + @nav-padding)*0.8;
                 background-color:  @nav-background-color;
-
-                padding: @element-padding + @nav-padding;
                 border-bottom: solid 1px @nav-item-hover-background-color;
             }
+
             li:hover{
                 background-color: @nav-item-hover-background-color;
                 cursor: pointer;
@@ -77,6 +82,11 @@
 }
 
 @media screen and (min-width: @sm-media-min-width) and (max-width: @sm-media-max-width) {
+    .nav-item-container
+    {
+        padding: @element-padding + @nav-padding;
+    }
+
     .nav-menu-button{
         color: @primary-foreground-color;
         border: 0;
@@ -117,11 +127,11 @@
             z-index: 1000;
 
             li{
-                background-color:  @nav-background-color;
-
                 padding: @element-padding + @nav-padding;
+                background-color:  @nav-background-color;
                 border-bottom: solid 1px @nav-item-hover-background-color;
             }
+
             li:hover{
                 background-color: @nav-item-hover-background-color;
                 cursor: pointer;
@@ -150,6 +160,11 @@
 }
 
 @media screen and (min-width: @md-media-min-width) {
+    .nav-item-container
+    {
+        padding: @element-padding + @nav-padding;
+    }
+
     .nav {
         .full-width;
         position: relative;
@@ -165,8 +180,8 @@
             padding: 0;
 
             li{
-                float: left;
                 padding: @element-padding + @nav-padding;
+                float: left;
             }
 
             li:hover{
