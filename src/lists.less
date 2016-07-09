@@ -1,14 +1,16 @@
+@import "variables.less";
+
 .tabbed-list
 {
     ul {
         list-style: none;
-        padding: 10px;
+        padding: @element-padding;
         margin: 0;
         text-align: left;
     }
     li {
         text-align: left;
-        padding: 10px;
+        padding: @element-padding;
     }
     li:first-child {
         text-align: center;
@@ -18,14 +20,14 @@
 .bullet-list
 {
     ul {
-        padding: 10px;
+        padding: @element-padding;
         margin: 0;
         text-align: left;
     }
     li {
         list-style:  disc;
         list-style-position: inside;
-        padding: 10px;
+        padding: @element-padding;
     }
     li:first-child {
         text-align: center;

@@ -1,6 +1,6 @@
 @import "variables.less";
 
-// SOURCE: http://codepen.io/maccadb7/pen/nbHEg
+// Original SOURCE: http://codepen.io/maccadb7/pen/nbHEg
 
 //
 // Variables
@@ -41,7 +41,7 @@
 // }
 
 .wrap{
-  padding: @space;
+  padding: @default-container-padding;
   text-align: center;
 }
 
@@ -50,8 +50,6 @@
 // ----------------------
 
 .modal{
-
-
   // This is modal bg
   &:before{
     content: "";
@@ -63,7 +61,6 @@
   }
 
   &:target{
-
     // Active animate in modal
     &:before{
       display: block;
@@ -72,18 +69,16 @@
       .translate(0, 0);
       top: 20%;
     }
-
   }
-
 }
 
 // Modal Dialog
 // ----------------------
 
 .modal-dialog{
-    background: #fefefe;
-    border: @gray solid 1px;
-    border-radius: 5px;
+    background: @secondary-background-color;
+    border: @modal-border;
+    border-radius: @default-border-radius;
     margin-left: -200px;
     position: fixed;
     left: 50%;
@@ -95,21 +90,25 @@
 }
 
 .modal-body{
-  padding: @space/2;
+  padding: @default-container-padding;
 }
 
 .modal-header,
 .modal-footer{
-  padding: @space/4 @space/2;
+  padding: @default-container-padding;
 }
 
 .modal-header{
-  border-bottom: @gray-lighter solid 1px;
+  border-bottom: @modal-border;
 }
 
 .modal-footer{
-  border-top: @gray-lighter solid 1px;
-  text-align: right;
+  border-top: @modal-border;
+}
+
+.modal-close{
+    text-align: right;
+    padding: @default-container-padding/2 @default-container-padding 0 0 ;
 }
 
 /*ADDED TO STOP SCROLLING TO TOP*/
