@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/sumitkm/sumitmaitra.com/issues"
   },
-  "homepage": "https://github.com/sumitkm/sumitmaitra.com#readme"
+  "homepage": "https://github.com/sumitkm/sumitmaitra.com#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-less": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.8",
+    "path": "^0.12.7"
+  }
 }
