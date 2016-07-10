@@ -39,6 +39,20 @@ h6 {
 
 a {
     text-decoration: none;
+    color: @secondary-foreground-color;
+
+    &:hover{
+        background-color: lighten(@primary-background-color, 60%);
+        padding: 1px 5px;
+        border-radius: 3px
+    }
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: @secondary-foreground-color;
+
 }
 
 hr {
