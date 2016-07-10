@@ -5,24 +5,39 @@ var less = require('gulp-less');
 var watch = require('gulp-watch');
 var prefix = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
-//var livereload = require('gulp-livereload');
+var livereload = require('gulp-livereload');
 var path = require('path');
+var connect = require('gulp-connect');
 
-var LessPluginCleanCSS = require('less-plugin-clean-css'),
-var cleanCSSPlugin = new LessPluginCleanCSS({advanced: true});
+var LessPluginCleanCSS = require('less-plugin-clean-css');
+var cleanCssPlugin = new LessPluginCleanCSS({ advanced: true });
 
-gulp.task('less', function() {
+gulp.task('less', () => {
     return gulp.src('./src/gnb.less')
         .pipe(plumber())
         .pipe(less({
-          paths: ['./src'],
-          plugins: [cleanCSSPlugin]
+            paths: ['./src'],
+            plugins: [cleanCssPlugin]
         }))
-        .pipe(gulp.dest('./dist'));
-        //.pipe(livereload());
-});
-gulp.task('watch', function() {
-    gulp.watch('./src/*.less', ['less']);  // Watch all the .less files, then run the less task
+        .pipe(gulp.dest('./dist'))
+        .pipe(connect.reload());
 });
 
-gulp.task('default', ['watch']); // Default will run the 'entry' watch task
+gulp.task('connect', () => {
+    connect.server({
+        livereload: true
+    });
+});
+
+gulp.task('html', () => {
+    gulp.src('./demo/*.html')
+        .pipe(connect.reload());
+});
+
+gulp.task('watch', () => {
+    gulp.watch(['./demo/*.html'], ['html']);
+    gulp.watch('./src/*.less', ['less']);
+
+});
+
+gulp.task('dev', ['connect', 'watch']);
