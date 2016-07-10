@@ -1,7 +1,35 @@
-@import "variables.less"
+@import "variables.less";
 
-@media screen and (min-width: @sm-media-min-width) and
-(max-width: @sm-media-max-width)
-{
-    
-};
+.tab {
+    display: inline-block;
+    border-bottom: 1px solid lighten(@primary-background-color, 50%);
+    width: 100%;
+
+    .horiz.tab-nav{
+        float: left;
+        margin: 0
+    }
+}
+
+.tab-nav {
+    display: inline-block;
+    padding: @element-padding;
+    margin: 0;
+    cursor: pointer;
+
+    &:hover{
+        border-bottom: 3px solid lighten(@primary-background-color, 50%);
+    }
+}
+
+.selected {
+    &:extend(.tab-nav);
+    border-bottom: 3px solid lighten(@primary-background-color, 30%);
+    color: @primary-background-color;
+    background-color: @primary-foreground-color;
+}
+
+.tab-container {
+    display: block;
+    padding: 10px;
+}

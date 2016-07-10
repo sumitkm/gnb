@@ -41,3 +41,5 @@ gulp.task('watch', () => {
 });
 
 gulp.task('dev', ['connect', 'watch']);
+
+gulp.task('default', ['less']);

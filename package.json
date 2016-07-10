@@ -1,21 +1,21 @@
 {
-  "name": "sumitmaitra.com",
+  "name": "gnb",
   "version": "1.0.0",
-  "description": "sumitmaitra.com",
+  "description": "GNB is not Bootstrap",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sumitkm/sumitmaitra.com.git"
+    "url": "git+https://github.com/sumitkm/gnb.git"
   },
   "author": "Sumit Maitra",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sumitkm/sumitmaitra.com/issues"
+    "url": "https://github.com/sumitkm/gnb/issues"
   },
-  "homepage": "https://github.com/sumitkm/sumitmaitra.com#readme",
+  "homepage": "https://github.com/sumitkm/gnb#readme",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -24,6 +24,8 @@
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
     "gulp-watch": "^4.3.8",
+    "less": "^2.7.1",
+    "less-plugin-clean-css": "^1.5.1",
     "path": "^0.12.7"
   }
 }
