@@ -1,0 +1,22 @@
+{
+  "name": "gnb",
+  "description": "GNB is not Bootstrap",
+  "main": "index.js",
+  "authors": [
+    "Sumit Maitra"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "LESS",
+    "CSS",
+    "HTML5"
+  ],
+  "homepage": "https://github.com/sumitkm/gnb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
