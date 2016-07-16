@@ -1,0 +1,40 @@
+@import "variables.less";
+
+.panel
+{
+    .panel-header {
+        padding: @nav-padding;
+        color: @secondary-foreground-color;
+        border-top-left-radius: @default-border-radius;
+        border-top-right-radius: @default-border-radius;
+        margin: @panel-margin @panel-margin 0;
+
+    }
+
+    .fill:extend(.panel-header) {
+        background-color: lighten(@primary-background-color, 50%);
+
+    }
+    .no-fill:extend(.panel-header) {
+        background-color: none;
+    }
+    .panel-body {
+        font-size: @fontsize-small;
+        margin: 0 @panel-margin;
+        border-left: solid 1px lighten(@primary-background-color, 50%);
+        border-right: solid 1px lighten(@primary-background-color, 50%);
+    }
+    .panel-footer {
+        padding: @nav-padding;
+        margin: 0 @panel-margin;
+        border-top: 1px solid lighten(@primary-background-color, 60%);
+        border-left: 1px solid lighten(@primary-background-color, 50%);
+        border-bottom: 1px solid lighten(@primary-background-color, 50%);
+        border-right: 1px solid lighten(@primary-background-color, 50%);
+    }
+
+    .no-border {
+        border:none;
+    }
+
+}

@@ -19,12 +19,12 @@ GNB is a pure CSS3 library, it has NO Javascript components.
 ## Complie time  
 - node  
 - npm  
-- less ```npm install less --save --only=dev```  
-- less-plugin-clean-css ```npm install less-plugin-clean-css --save --only=dev```  
-- TypeScript ```npm install typescript -g```  
+- less - ```npm install less --save --only=dev```  
+- less-plugin-clean-css - ```npm install less-plugin-clean-css --save --only=dev```  
+- TypeScript - ```npm install typescript -g```  
 
 ## Development  
-All dependencies are self contained in package.json ```npm install``` will install all required dependencies locally.
+All dependencies are self-contained in package.json ```npm install``` will install all required dependencies locally.
 
 # How to  
 

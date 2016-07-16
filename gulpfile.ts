@@ -8,19 +8,35 @@ var plumber = require('gulp-plumber');
 var livereload = require('gulp-livereload');
 var path = require('path');
 var connect = require('gulp-connect');
-
+var gutil = require('gutil');
 var LessPluginCleanCSS = require('less-plugin-clean-css');
 var cleanCssPlugin = new LessPluginCleanCSS({ advanced: true });
 
+var onError = function (err) {
+  //gutil.beep();
+  console.log(err.toString());
+  this.emit('end');
+};
+
 gulp.task('less', () => {
+    try
+    {
     return gulp.src('./src/gnb.less')
-        .pipe(plumber())
+        .on('error', (err) => { console.error(err); this.emit('end'); })
+        .pipe(plumber({
+          errorHandler: onError
+        }))
         .pipe(less({
             paths: ['./src'],
             plugins: [cleanCssPlugin]
         }))
         .pipe(gulp.dest('./dist'))
         .pipe(connect.reload());
+    }
+    catch (exception)
+    {
+        console.error("less task failed: ", exception);
+    }
 });
 
 gulp.task('connect', () => {
