@@ -66,4 +66,4 @@ gulp less
 Once you have run ```gulp less``` or ```gulp dev``` the LESS files are compiled into the ```./dist ``` folder.
 
 4. Bower package ?  
-Current version 0.2.0
+Current version 0.1.1
