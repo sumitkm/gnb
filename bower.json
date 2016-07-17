@@ -1,7 +1,7 @@
 {
   "name": "gnb",
-  "description": "GNB is not Bootstrap",
-  "main": "index.js",
+  "description": "Gnb is Not Bootstrap",
+  "main": "dist/gnb.less",
   "authors": [
     "Sumit Maitra"
   ],

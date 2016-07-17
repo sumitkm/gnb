@@ -4,31 +4,40 @@
 @media screen and (max-width: @xs-media-max-width) {
     .nav-item-container
     {
-        padding: (@element-padding + @nav-padding)*0.8;
+        padding: (@element-padding + @nav-padding) * 0.8;
     }
 
     .nav-menu-button{
         border: 0;
-        background-color: transparent;
+        background-color: @nav-background-color;
         color: @primary-foreground-color;
-        padding: (@element-padding + @nav-padding)*0.8;
+        padding: (@element-padding + @nav-padding) * 0.8;
         display: inline-block;
         cursor: pointer;
     }
 
     .nav-menu-button:hover{
         background-color: @nav-item-hover-background-color;
+        .dropdown{
+            left: 0 !important;
+        }
     }
 
     .dropdown {
         display: inline-block;
         position: absolute;
         left: -@xs-media-max-width;
-        top: @nav-height*0.8;
+        top: @nav-height * 0.8;
     }
 
-    .nav-menu-button:focus .dropdown{
+    .dropdown:hover{
         left: 0 !important;
+    }
+
+    .nav-menu-button:focus {
+        .dropdown{
+            left: 0 !important;
+        }
     }
 
     .nav {
@@ -49,7 +58,7 @@
             z-index: 1000;
 
             li{
-                padding: (@element-padding + @nav-padding)*0.8;
+                padding: (@element-padding + @nav-padding) * 0.8;
                 background-color:  @nav-background-color;
                 border-bottom: solid 1px @nav-item-hover-background-color;
             }
@@ -88,9 +97,9 @@
     }
 
     .nav-menu-button{
-        color: @primary-foreground-color;
         border: 0;
         background-color: transparent;
+        color: @primary-foreground-color;
         padding: (@element-padding + @nav-padding)*0.8;
         display: inline-block;
         cursor: pointer;
@@ -172,7 +181,7 @@
         line-height: 1em;
         background-color:  @nav-background-color;
         color: @nav-color;
-        min-height: (@nav-font-size + (2*@element-padding) + (2*@nav-padding));
+        min-height: (@nav-font-size + (2 * @element-padding) + ( 2 * @nav-padding));
 
         ul{
             list-style: none;

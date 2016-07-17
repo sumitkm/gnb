@@ -42,10 +42,13 @@ a {
 
     &:hover {
         background-color: lighten(@primary-background-color, 60%);
+
+    }
+    &:hover.hover-pad
+    {
         padding: 2px 2px;
         border-radius: 2px;
     }
-
 }
 
 a:visited {
@@ -121,4 +124,46 @@ hr {
 
 .center {
     text-align: center;
+}
+
+@media screen and (max-width: @xs-media-max-width)
+{
+    .element-padding{
+        padding: ceil(@element-padding * 0.6);
+    }
+}
+
+@media screen
+    and (min-width: @sm-media-min-width)
+    and (max-width: @sm-media-max-width)
+{
+    .element-padding{
+        padding: ceil(@element-padding * 0.8);
+    }
+}
+
+@media screen
+    and (min-width: @md-media-min-width)
+    and (max-width: @md-media-max-width)
+{
+    .element-padding{
+        padding: ceil(@element-padding);
+    }
+}
+
+@media screen
+    and (min-width: @lg-media-min-width)
+    and (max-width: @lg-media-max-width)
+{
+    .element-padding{
+        padding: ceil(@element-padding * 1.2);
+    }
+}
+
+@media screen
+    and (min-width: @xl-media-min-width)
+{
+    .element-padding{
+        padding: ceil(@element-padding * 1.4);
+    }
 }
