@@ -41,7 +41,8 @@ gulp.task('less', () => {
 
 gulp.task('connect', () => {
     connect.server({
-        livereload: true
+        livereload: true,
+        port: 8081
     });
 });
 
