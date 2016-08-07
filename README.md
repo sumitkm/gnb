@@ -37,33 +37,33 @@ All dependencies are self-contained in package.json ```npm install``` will insta
 
 1. Get started with the source code.
 a. download the repository  
-```
-git clone https://github.com/sumitkm/gnb   
-```   
+    ```
+    git clone https://github.com/sumitkm/gnb   
+    ```   
 b. Install TypeScript compiler globally (might need sudo)   
-```
-npm install typescript -g
-```  
+    ```
+    npm install typescript -g
+    ```  
 c. install all dependencies  
-```
-npm install
-```  
+    ```
+    npm install
+    ```  
 d. compile gulp scripts  
-```
-tsc
-```    
+    ```
+    tsc
+    ```    
 e. Compile LESS and start livereload. Demo page available on http://localhost:8080/demo
-```
-gulp dev
-```
+    ```
+    gulp dev
+    ```
 
 2. Compile only the LESS file   
-```
-gulp less
-```
+    ```
+    gulp less
+    ```
 
 3. Find the final CSS file?  
 Once you have run ```gulp less``` or ```gulp dev``` the LESS files are compiled into the ```./dist ``` folder.
 
 4. Bower package ?  
-Current version 0.1.1
+Current version 0.1.4
