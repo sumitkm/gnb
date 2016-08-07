@@ -4,7 +4,9 @@
   "description": "GNB is not Bootstrap",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
     "gutil": "^1.6.4",
     "less": "^2.7.1",
     "less-plugin-clean-css": "^1.5.1",
-    "path": "^0.12.7"
-  }
+    "path": "^0.12.7",
+    "snyk": "^1.18.0"
+  },
+  "snyk": true
 }
