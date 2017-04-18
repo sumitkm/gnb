@@ -1,5 +1,27 @@
-version: v1.5.0
-ignore: {}
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:qs:20170213':
+    - gulp-livereload > mini-lr > qs:
+        reason: None given
+        expires: '2017-05-18T01:13:15.123Z'
+    - gulp-connect > connect > qs:
+        reason: None given
+        expires: '2017-05-18T01:13:15.123Z'
+    - gulp-connect > connect > body-parser > qs:
+        reason: None given
+        expires: '2017-05-18T01:13:15.123Z'
+    - gulp-connect > tiny-lr > qs:
+        reason: None given
+        expires: '2017-05-18T01:13:15.124Z'
+    - gulp-livereload > mini-lr > body-parser > qs:
+        reason: None given
+        expires: '2017-05-18T01:13:15.124Z'
+    - gulp-connect > tiny-lr > body-parser > qs:
+        reason: None given
+        expires: '2017-05-18T01:13:15.160Z'
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
     - gulp > vinyl-fs > glob-stream > minimatch:
