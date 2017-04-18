@@ -13,7 +13,6 @@ var LessPluginCleanCSS = require('less-plugin-clean-css');
 var cleanCssPlugin = new LessPluginCleanCSS({ advanced: true });
 
 var onError = function (err) {
-  //gutil.beep();
   console.log(err.toString());
   this.emit('end');
 };

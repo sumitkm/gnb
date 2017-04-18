@@ -1,11 +1,13 @@
 # GNB
 
+[![Known Vulnerabilities](https://snyk.io/test/github/sumitkm/gnb/badge.svg)](https://snyk.io/test/github/sumitkm/gnb)
+
 ## __GNB is Not Bootstrap__
 ###### Not to be confused with 'Goliath National Bank' from HIMYM ;-)   
 
 A small CSS library that has the bare minimum layout and styling to get your HTML5 app started.  
 
-Conceptually similar to Bootstrap, only about 1/10th the size atm. Final aim is
+Conceptually similar to Bootstrap, only about 16KB at the moment (as opposed to Bootstrap 3.3.7 which is 118KB uncompressed). Final aim is
 to be < 25% of the size of Bootstrap (uncompressed).
 
 GNB is a pure CSS3 library, it has NO Javascript components.
@@ -35,7 +37,7 @@ All dependencies are self-contained in package.json ```npm install``` will insta
 
 # How to:  
 
-1. Get started with the source code.
+1. Get started with the source code.  
 a. download the repository  
     ```
     git clone https://github.com/sumitkm/gnb   
