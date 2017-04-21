@@ -1,6 +1,6 @@
 {
   "name": "gnb",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "GNB is not Bootstrap",
   "main": "index.js",
   "scripts": {

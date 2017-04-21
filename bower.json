@@ -1,6 +1,6 @@
 {
   "name": "gnb",
-  "description": "Gnb is Not Bootstrap",
+  "description": "Gnb is Not Bootstrap - A tiny CSS layouts library",
   "main": "dist/gnb.less",
   "authors": [
     "Sumit Maitra"
