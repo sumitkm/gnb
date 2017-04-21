@@ -7,10 +7,10 @@
 
 A small CSS library that has the bare minimum layout and styling to get your HTML5 app started.  
 
-Conceptually similar to Bootstrap, only about 16KB at the moment (as opposed to Bootstrap 3.3.7 which is 118KB uncompressed). Final aim is
+Conceptually similar to Bootstrap, only about 16KB (uncompressed) at the moment (as opposed to Bootstrap 3.3.7 which is 118KB uncompressed). Final aim is
 to be < 25% of the size of Bootstrap (uncompressed).
 
-GNB is a pure CSS3 library, it has NO Javascript components.
+GNB is a pure CSS3 library, it has NO Javascript components, so feel free to BYOJSF.
 
 ### Built using {LESS}
 

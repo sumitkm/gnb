@@ -1,15 +1,15 @@
 @import "variables.less";
 
-.input-text{
+.input-text {
     border-width: 1px;
     border-style: solid;
     border-color: lighten(@primary-background-color, 50%);
     font-size: @fontsize-base;
     min-height: @fontsize-base * 2.5;
-    padding: 0 @element-padding;
+    padding: @element-padding;
 }
 
-.form{
+.form {
     .input-label{
         width: 100%;
         display: block;
@@ -22,4 +22,8 @@
         width: 100%;
         margin-bottom: @element-padding;
     }
+}
+
+textarea{
+    font-family: inherit;
 }
