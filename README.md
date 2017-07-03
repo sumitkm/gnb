@@ -7,7 +7,7 @@
 
 A small CSS library that has the bare minimum layout and styling to get your HTML5 app started.  
 
-Conceptually similar to Bootstrap, only about 16KB (uncompressed) at the moment (as opposed to Bootstrap 3.3.7 which is 118KB uncompressed). Final aim is
+Conceptually similar to Bootstrap, only about 16KB (minified,uncompressed) at the moment (as opposed to Bootstrap 3.3.7 which is 118KB uncompressed). Final aim is
 to be < 25% of the size of Bootstrap (uncompressed).
 
 GNB is a pure CSS3 library, it has NO Javascript components, so feel free to BYOJSF.
@@ -68,4 +68,4 @@ e. Compile LESS and start livereload. Demo page available on http://localhost:80
 Once you have run ```gulp less``` or ```gulp dev``` the LESS files are compiled into the ```./dist ``` folder.
 
 4. Bower package ?  
-Current version 0.1.4
+Current version 0.1.7

@@ -8,22 +8,23 @@
         border-top-left-radius: @default-border-radius;
         border-top-right-radius: @default-border-radius;
         margin: @panel-margin @panel-margin 0;
-
     }
 
-    .fill:extend(.panel-header) {
+    .panel-header.fill {
         background-color: lighten(@primary-background-color, 50%);
-
     }
-    .no-fill:extend(.panel-header) {
+
+    .panel-header.no-fill {
         background-color: none;
     }
+
     .panel-body {
         font-size: @fontsize-small;
         margin: 0 @panel-margin;
         border-left: solid 1px lighten(@primary-background-color, 50%);
         border-right: solid 1px lighten(@primary-background-color, 50%);
     }
+
     .panel-footer {
         padding: @nav-padding;
         margin: 0 @panel-margin;
@@ -36,5 +37,41 @@
     .no-border {
         border:none;
     }
-
 }
+
+.generate-borders(primary, lighten(@primary-background-color, 50%));
+.generate-borders(secondary, lighten(@secondary-background-color, 50%));
+.generate-borders(danger, lighten(@danger-background-color, 50%));
+.generate-borders(default, darken(@default-background-color, 50%));
+.generate-borders(success, lighten(@success-background-color, 50%));
+
+.generate-borders(@n, @c) {
+  .border-@{n}.all
+  {
+    border: 1px solid @c;
+  }
+
+  .border-@{n}.top
+  {
+    border: none;
+    border-top: 1px solid @c;
+  }
+
+  .border-@{n}.left
+  {
+    border: none;
+    border-left: 1px solid @c;
+  }
+
+  .border-@{n}.right
+  {
+    border: none;
+    border-right: 1px solid @c;
+  }
+
+  .border-@{n}.bottom
+  {
+    border: none;
+    border-bottom: 1px solid @c;
+  }
+};
