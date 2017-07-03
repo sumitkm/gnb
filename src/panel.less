@@ -49,29 +49,59 @@
   .border-@{n}.all
   {
     border: 1px solid @c;
+    &.rounded {
+      border-radius: @default-border-radius;
+    }
+    &.rounded-large {
+      border-radius: @large-border-radius;
+    }
   }
 
   .border-@{n}.top
   {
     border: none;
     border-top: 1px solid @c;
+    &.rounded {
+      border-radius: @default-border-radius;
+    }
+    &.rounded-large {
+      border-radius: @large-border-radius;
+    }
   }
 
   .border-@{n}.left
   {
     border: none;
     border-left: 1px solid @c;
+    &.rounded {
+      border-radius: @default-border-radius;
+    }
+    &.rounded-large {
+      border-radius: @large-border-radius;
+    }
   }
 
   .border-@{n}.right
   {
     border: none;
     border-right: 1px solid @c;
+    &.rounded {
+      border-radius: @default-border-radius;
+    }
+    &.rounded-large {
+      border-radius: @large-border-radius;
+    }
   }
 
   .border-@{n}.bottom
   {
     border: none;
     border-bottom: 1px solid @c;
+    &.rounded {
+      border-radius: @default-border-radius;
+    }
+    &.rounded-large {
+      border-radius: @large-border-radius;
+    }
   }
 };
