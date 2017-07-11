@@ -30,17 +30,15 @@ and (max-width: @sm-media-max-width)
     .generate-columns(12);
     .generate-columns(@n, @i: @n) when (@i > 0) {
 
-        .col-xs-@{i}, .col-sm-@{i} {
+        .col-sm-@{i}
+        {
             width: (@i * 100% / @n);
             float: left;
             display: inline-block;
         }
-        .col-md-@{i}, .col-lg-@{i}, .col-xl-@{i} {
-            width: 100%;
-            float: left;
-            display: inline-block;
-        }
-        .col-offset-xs-@{i}, .col-offset-sm-@{i} {
+
+        .col-offset-sm-@{i}
+        {
             margin-left: (@i * 100% / @n);
             float: left;
             display: inline-block;
@@ -49,30 +47,70 @@ and (max-width: @sm-media-max-width)
     }
 };
 
-@media screen and (min-width: @md-media-min-width) {
+@media screen
+and (min-width: @md-media-min-width)
+and (max-width: @md-media-max-width)  {
     .generate-columns(12);
     .generate-columns(@n, @i: @n) when (@i > 0) {
 
+        .col-md-@{i}
+        {
+            width: (@i * 100% / @n);
+            float: left;
+            display: inline-block;
+        }
+
+        .col-offset-md-@{i}
+        {
+            margin-left: (@i * 100% / @n);
+            float: left;
+            display: inline-block;
+        }
+        .generate-columns(@n, (@i - 1));
+    }
+};
+
+@media screen
+and (min-width: @lg-media-min-width)
+and (max-width: @lg-media-max-width) {
+    .generate-columns(12);
+    .generate-columns(@n, @i: @n) when (@i > 0) {
+
+      .col-sm-@{i},
         .col-md-@{i},
-        .col-lg-@{i},
-        .col-xl-@{i} {
+        .col-lg-@{i}
+        {
             width: (@i * 100% / @n);
             float: left;
             display: inline-block;
         }
 
-        .col-xs-@{i},
-        .col-sm-@{i}{
+        .col-offset-lg-@{i}
+        {
+            margin-left: (@i * 100% / @n);
+            float: left;
+            display: inline-block;
+        }
+        .generate-columns(@n, (@i - 1));
+    }
+};
+
+@media screen
+and (min-width: @xl-media-min-width) {
+    .generate-columns(12);
+    .generate-columns(@n, @i: @n) when (@i > 0) {
+      .col-sm-@{i},
+      .col-md-@{i},
+      .col-lg-@{i},
+      .col-xl-@{i}
+      {
             width: (@i * 100% / @n);
             float: left;
             display: inline-block;
         }
 
-        .col-offset-xs-@{i},
-        .col-offset-sm-@{i},
-        .col-offset-md-@{i},
-        .col-offset-lg-@{i},
-        .col-offset-xl-@{i} {
+        .col-offset-xl-@{i}
+        {
             margin-left: (@i * 100% / @n);
             float: left;
             display: inline-block;

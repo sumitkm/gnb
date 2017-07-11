@@ -20,17 +20,17 @@
   "homepage": "https://github.com/sumitkm/gnb#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-connect": "^4.1.0",
-    "gulp-less": "^3.1.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^4.2.0",
+    "gulp-less": "^3.3.2",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
-    "gulp-watch": "^4.3.8",
+    "gulp-watch": "^4.3.11",
     "gutil": "^1.6.4",
-    "less": "^2.7.1",
+    "less": "^2.7.2",
     "less-plugin-clean-css": "^1.5.1",
     "path": "^0.12.7",
-    "snyk": "^1.28.1"
+    "snyk": "^1.36.2"
   },
   "snyk": true
 }
