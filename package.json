@@ -6,7 +6,8 @@
   "scripts": {
     "test": "test",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,7 @@
     "less": "^2.7.2",
     "less-plugin-clean-css": "^1.5.1",
     "path": "^0.12.7",
-    "snyk": "^1.36.2"
+    "snyk": "^1.88.0"
   },
   "snyk": true
 }
