@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.0
+version: v1.7.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:qs:20170213':
@@ -37,3 +37,28 @@ patch:
         patched: '2016-08-07T23:51:08.553Z'
     - gulp-connect > connect > serve-index > accepts > negotiator:
         patched: '2016-08-07T23:51:08.553Z'
+  'npm:debug:20170905':
+    - gulp-livereload > mini-lr > body-parser > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > finalhandler > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > morgan > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > serve-index > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > tiny-lr > body-parser > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > express-session > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > tiny-lr > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > body-parser > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > compression > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > connect-timeout > debug:
+        patched: '2017-10-01T00:17:10.101Z'
+    - gulp-connect > connect > serve-static > send > debug:
+        patched: '2017-10-01T00:17:10.101Z'
