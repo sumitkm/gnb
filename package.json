@@ -30,7 +30,7 @@
     "less": "^2.7.2",
     "less-plugin-clean-css": "^1.5.1",
     "path": "^0.12.7",
-    "snyk": "^1.36.2"
+    "snyk": "^1.231.0"
   },
   "snyk": true
 }
